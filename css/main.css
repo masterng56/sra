@@ -1,0 +1,39 @@
+/*Общие*/
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+}
+.logo {
+	display: block;
+}
+.up_header {
+	background: #5290b9;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.mid_header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.mid_header h1 {
+	padding-left: 25px;
+	margin-top: 15px;
+}
+.info_header {
+	font-size: 14px;
+	font-weight: 400;
+	color: #8d8d8d;
+	display: flex;
+}
+.info_header p {
+	margin-left: 7px;
+	margin-bottom: 0; 
+}
+.info_header i {
+	font-size: 16px;
+	color: #8d8d8d;
+}
