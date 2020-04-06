@@ -7,13 +7,16 @@ h1 {
 	font-size: 20px;
 	font-weight: 700;
 }
+
+/*Шапка*/
+
 .logo {
 	display: block;
 }
 .up_header {
 	background: #5290b9;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 }
 .mid_header {
 	padding-top: 25px;
@@ -31,9 +34,42 @@ h1 {
 }
 .info_header p {
 	margin-left: 7px;
-	margin-bottom: 0; 
+	margin-bottom: 0px; 
 }
 .info_header i {
-	font-size: 16px;
+	font-size: 14px;
 	color: #8d8d8d;
 }
+.fa {
+	width: 14px;
+	height: 14px;
+	text-align: center;
+}
+
+
+/*Меню*/
+
+.low_header {
+	background: #5290b9;
+}
+.navbar {
+	padding: 0;
+}
+.nav-link {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+li:hover .dropdown-menu {
+	background: #fafafa;
+	display: flex;
+	border: 0;
+}
+.dropdown-item {
+	font-size: 14px;
+	font-weight: 500;
+	color: #5290b9;
+}
+
