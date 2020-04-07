@@ -7,6 +7,10 @@ h1 {
   font-size: 20px;
   font-weight: 700;
 }
+
+ul {
+  margin: 0;
+}
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -14,6 +18,7 @@ h1 {
 /*Шапка*/
 .flex {
   display: flex;
+  box-sizing: border-box;
 }
 
 .up_header_top_item {
@@ -22,32 +27,43 @@ h1 {
   padding-right: 30px;
 }
 
-.up_header_top_item img {
+.up_header_top_item {
   height: 20px;
-  width: auto;
 }
 
 .up_header_top div:nth-child(2) {
   flex-grow: 1;
 }
 
+.mid_header_item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.mid_header_item h1 {
+  max-width: 378px;
+}
+
 .logo {
   display: block;
 }
 .up_header {
-  height: 50px;
-  box-sizing: border-box;
   background: #5290b9;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.mid_header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+
+.mid_header_mid div:nth-child(3) {
+  margin-left: auto;
 }
+
+.mid_header_item div:nth-child(2) {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
 .mid_header h1 {
-  padding-left: 25px;
-  margin-top: 15px;
 }
 .info_header {
   font-size: 14px;
@@ -56,26 +72,19 @@ h1 {
   display: flex;
 }
 .info_header p {
-  margin-left: 7px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 .fa {
-  font-size: 16px;
   color: #8d8d8d;
-  width: 16px;
-  height: 16px;
-  text-align: center;
+  padding-right: 8px;
 }
 .fa-map-marker:before {
-  vertical-align: middle;
 }
 
 .fa-phone:before {
-  vertical-align: middle;
 }
 
 .fa-envelope:before {
-  vertical-align: middle;
 }
 
 /*Меню*/
