@@ -23,6 +23,8 @@ a {
 .container {
   max-width: 940px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
+  height: auto;
 }
 /*Шапка*/
 .flex {
@@ -96,17 +98,22 @@ a {
   padding-right: 8px;
 }
 
+.fa-chevron-down {
+  color: #fff;
+}
+
 /*Меню*/
 
 .bottom_header {
   background: #5290b9;
 }
-.navbar ul {
-  padding: 0;
+
+.navbar {
+  position: relative;
 }
 
-nav li {
-  position: relative;
+.navbar ul {
+  padding: 0;
 }
 
 .navbar-nav {
@@ -117,44 +124,61 @@ nav li {
   display: block;
   padding-top: 13px;
   padding-bottom: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 10px;
-  background-color: #000;
-}
-
-.navbar-nav > li:hover .dropdown-menu {
-  display: block;
 }
 
 .nav-item a:hover {
   background: #fafafa;
   color: #f66c36;
 }
-/*li:hover .dropdown-menu {
-	background: #fafafa;
-	display: flex;
-	border: 0;
-}*/
-.show {
-  background: #fafafa;
+.nav-item a:hover .fa-chevron-down {
   color: #f66c36;
-  border-bottom: 3px;
-  border-radius: 1px;
+}
+
+/* .dropdown-toggle::after {
+  content: ">";
+} */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  width: 100%;
+  color: #5290b9;
   background: #fafafa;
+
+  align-items: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-nav > li:hover .dropdown-menu {
   display: flex;
-  border: 0;
 }
+
+.dropdown-item {
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: top;
+  bottom: #fafafa;
+}
+
 .dropdown-item-link {
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  width: 99%;
+  vertical-align: middle;
+  padding: 11px 7px;
+  box-sizing: border-box;
 }
+
 .dropdown-menu {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
 }
