@@ -98,7 +98,7 @@ a {
   padding-right: 8px;
 }
 
-.fa-chevron-down {
+.fa-chevron-right {
   color: #fff;
 }
 
@@ -116,11 +116,16 @@ a {
   padding: 0;
 }
 
-.navbar-nav {
+/* .navbar-nav {
   justify-content: space-between;
+} */
+
+.nav-item {
+  width: calc(100% / 6);
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -129,14 +134,56 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
+}
+
+.navbar-nav > li:hover .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  background-color: #f66c36;
+  height: 3px;
+  width: 100%;
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
 }
 
 .nav-item a:hover {
   background: #fafafa;
   color: #f66c36;
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
 }
-.nav-item a:hover .fa-chevron-down {
+
+.fa-chevron-right {
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+}
+
+.nav-item a:hover .fa-chevron-right {
   color: #f66c36;
+  display: inline-block;
+  transform: rotate(90deg) translatex(7px);
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  -webkit-transform: rotate(90deg) translatex(7px);
+  -moz-transform: rotate(90deg) translatex(7px);
+  -ms-transform: rotate(90deg) translatex(7px);
+  -o-transform: rotate(90deg) translatex(7px);
 }
 
 /* .dropdown-toggle::after {
@@ -151,13 +198,17 @@ a {
   width: 100%;
   color: #5290b9;
   background: #fafafa;
-
   align-items: center;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
 }
 
 .navbar-nav > li:hover .dropdown-menu {
   display: flex;
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
 }
 
 .dropdown-item {
@@ -176,6 +227,7 @@ a {
   vertical-align: middle;
   padding: 11px 7px;
   box-sizing: border-box;
+  color: #5290b9;
 }
 
 .dropdown-menu {
