@@ -42,9 +42,7 @@
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {
 }
-/* Точки (булиты) */
-.slick-dots {
-}
+
 .slick-dots li {
 }
 /* Активная точка */
@@ -59,23 +57,90 @@
   position: relative;
 }
 
+.slider-item {
+  position: relative;
+}
+
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 9;
   font-size: 0;
-  width: 30px;
-  height: 50px;
+  width: 25px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 .slider .slick-arrow.slick-prev {
   right: 0;
-  background: url("../img/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+
+  background: url("../img/arrow-wright.png") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
   left: 0;
-  background: url("../img/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+
+  background: url("../img/arrow-left.png") 0 0 / 100% no-repeat;
 }
 
 .slider-item {
+}
+
+.slider button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  box-sizing: border-box;
+  border: 0;
+}
+
+.slider-head {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  width: 460px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slider-description {
+  position: absolute;
+  top: 205px;
+  left: 80px;
+  width: 460px;
+  color: #fff;
+}
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 39%;
+  bottom: 20px;
+  margin: 0 auto;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots button {
+  cursor: pointer;
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 2px solid #fff;
 }
