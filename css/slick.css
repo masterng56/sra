@@ -84,7 +84,15 @@
   background: url("../img/arrow-left.png") 0 0 / 100% no-repeat;
 }
 
-.slider-item {
+.slider-item-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 60%;
+  border-top: 470px solid #000000;
+  border-right: 200px solid transparent;
+  opacity: 0.7;
 }
 
 .slider button,
@@ -102,6 +110,7 @@
   width: 460px;
   color: #fff;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .slider-description {
@@ -110,6 +119,7 @@
   left: 80px;
   width: 460px;
   color: #fff;
+  z-index: 1;
 }
 /* Точки (булиты) */
 .slider .slick-dots {

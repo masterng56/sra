@@ -1,0 +1,13 @@
+.d12 {
+  margin-left: 20px;
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: #d4d5da;
+}
+.d11 {
+  height: 0;
+  width: 100px;
+  border-top: 100px solid #000000;
+  border-right: 50px solid transparent;
+}
